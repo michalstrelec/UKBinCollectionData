@@ -1,4 +1,6 @@
 # This script pulls (in one hit) the data from Bromley Council Bins Data
+import logging
+
 import datetime
 from datetime import datetime
 
