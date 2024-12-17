@@ -76,6 +76,9 @@ class CouncilClass(AbstractGetBinDataClass):
                     # Get the current year
                     current_year = datetime.now().year
 
+                    # Log parsed date and current year
+                    logging.info(f"Parsed date: {date_object.strftime('%Y-%m-%d')}, Current date: {datetime.now()}")
+                    
                     # Check if the parsed date is in the past compared to the current date
                     if date_object < datetime.now():
                         # If the parsed date is in the past, assume it's for the next year
